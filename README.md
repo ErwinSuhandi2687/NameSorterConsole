@@ -27,10 +27,12 @@
    
 ## Run Unit Test
 there are 3 Scenario of Unit test.
-1. unit test when file doesnt exist when that file will be read ("unsorted-names-list.txt").
-2. unit test when there are file will be read ("unsorted-names-list.txt").
-3. unit test when the names will be sorted.
-
+1. unit test when there are file will be read ("unsorted-names-list.txt").
+2. unit test when the names will be sorted.
+3. unit test when file doesnt exist ("unsorted-names-list.txt").
+   ```
+   for this scenario, you can remove file "unsorted-names-list.txt".
+   ```
 
 ## Stay in touch
 
