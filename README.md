@@ -2,33 +2,37 @@
 
 [![GitHub](https://img.shields.io/github/license/defartsa23/shuffle-dice-sicbo)](https://opensource.org/licenses/MIT)
 
-## Nuget Package Manager
-First, enable package restore in visual studio and install or update all package dependencies
-```
-dotnet restore 
-```
-Second
+## Setup Project
+1. Clone or download this code.
+2. Open NameSorterConsole.sln.
+3. if there are missing package, then enable package restore in visual studio and install or update all package dependencies.
+    ```
+      dotnet restore 
+    ```
+4. Copy folder : NameSorterConsole\Files.
+5. Open folder : NameSorterConsole\bin\Debug\net6.0, and paste folder : NameSorterConsole\Files.
+6. Open folder : NameSorterConsoleTest\bin\Debug\net6.0, and paste folder : NameSorterConsole\Files.
 
-```bash
-$ npx prisma migrate dev --name init
-$ npx prisma db seed
-```
-Terakhir execute query yang ada di file [sql-stored-function-distance](./sql-stored-function-distance.sql)
-## Create docker container
-```bash
-$ sh deploy_script.sh
-```
 
-## API Documentation
-Jalankan service terlebih dahulu, lalu buka {baseUrl}/documentation
+## Run Project
+1. run console project
+    ```
+      - Press enter to view list name unsorted. File will be read from file "unsorted-names-list.txt" 
+        in folder : NameSorterConsole\bin\Debug\net6.0\Files
+      - Press enter to view list name that has been sorted and create file "sorted-names-list.txt" 
+        in folder : NameSorterConsole\bin\Debug\net6.0\Files. 
+    ```
+2. Check file "sorted-names-list.txt" in folder : NameSorterConsole\bin\Debug\net6.0\Files. 
+   this file already contains sorted data
+   
+## Run Unit Test
+there are 3 Scenario of Unit test.
+1. unit test when file doesnt exist when that file will be read ("unsorted-names-list.txt").
+2. unit test when there are file will be read ("unsorted-names-list.txt").
+3. unit test when the names will be sorted.
 
-## Import collection insomnia
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Meal%20Delivery&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fdefartsa23%2Fmeal-delivery%2Fmain%2Fmeal-delivery.json%3Ftoken%3DGHSAT0AAAAAABW7CF67XBU47X4WPQBNZFAIYXW4YWA)
 
 ## Stay in touch
 
-- Author - [Deza Farras Tsany](https://kamilmysliwiec.com)
+- Author - [Erwin Suhandi]
 
-## License
-
-This software is licensed under the [MIT licensed](./LICENSE).
